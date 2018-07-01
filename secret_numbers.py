@@ -15,3 +15,23 @@ def __generate_secret_number():
 def __hit(secret_number, choice):
     """Check if the choice is equal to secret number"""
     return secret_number == choice
+
+# Main program
+from random import randint
+
+__welcome_message
+
+secret_number = __generate_secret_number()
+choice = 0
+
+while __hit(secret_number, choice) == False:
+    choice = int(input("Enter your estimate: "))
+    if __hit(secret_number, choice):
+        print("You win!")
+    else:
+        if choice > secret_number:
+            print("Too high")
+        else:
+            print("Too low")
+print("Game Over.")
+
